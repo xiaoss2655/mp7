@@ -59,14 +59,14 @@ public class Game {
 				if (b.skills[1] == null) {
 					System.out.println("1. " + b.skills[0].name);
 					s1 = sc2.nextInt() - 1;					
-					while (s1 == 1) {
+					while (s1 != 0) {
 						System.out.println("Please choose the skill you want to use");
 						s1 = sc2.nextInt() - 1;
 					}
 				} else if (b.skills[2] == null) {
 					System.out.println("1. " + b.skills[0].name + " 2. " + b.skills[1].name);
 					s1 = sc2.nextInt() - 1;
-					while (s1 > 2 || s1 < 1) {
+					while (s1 > 1 || s1 < 0) {
 						System.out.println("Please choose the skill you want to use");
 						s1 = sc2.nextInt() - 1;
 					}
@@ -74,7 +74,7 @@ public class Game {
 					System.out.println("1. " + b.skills[0].name + " 2. " + b.skills[1].name
 							+ " 3. " + b.skills[2].name);
 					s1 = sc2.nextInt() - 1;
-					while (s1 > 3 || s1 < 1) {
+					while (s1 > 2 || s1 < 0) {
 						System.out.println("Please choose the skill you want to use");
 						s1 = sc2.nextInt() - 1;
 					}
