@@ -46,7 +46,7 @@ public class Game {
 				return true; 
 			}
 			if (c == 1) {
-				damage = b.attack + Math.max(b.intelligence, b.strength) * b.luck - a.defence;
+				damage = b.attack + Math.max(b.intelligence, b.strength) * b.luck / 2 - a.defence;
 				if (damage < 0) {
 					damage = 1;
 				}
@@ -80,11 +80,11 @@ public class Game {
 					}
 				}
 				if (b.mp - b.skills[s1].consume >= 0) {
-					damage = b.attack + Math.max(b.intelligence, b.strength) * b.luck + b.skills[s1].attack - a.defence;
+					damage = b.attack + Math.max(b.intelligence, b.strength) * b.luck /2 + b.skills[s1].attack - a.defence;
 					b.mp -= b.skills[s1].consume;
 				} else {
 					System.out.println("You don't have enough mp");
-					damage = b.attack + Math.max(b.intelligence, b.strength) * b.luck - a.defence;
+					damage = b.attack + Math.max(b.intelligence, b.strength) * b.luck /2 - a.defence;
 					
 				}
 				if (damage <= 0) {
