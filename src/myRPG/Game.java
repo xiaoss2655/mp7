@@ -157,16 +157,76 @@ public class Game {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("This, is a dangerous world.");
+		try {
+			Thread.sleep(500);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		System.out.println("People used to live peacefully with Earth creatures.");
+		try {
+			Thread.sleep(500);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		System.out.println(" But one day, a gigantic meteorite filled with seeds of creatures from the universe fell on the Earth, bringing the Earth a huge catastrophy.");
+		try {
+			Thread.sleep(500);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		System.out.println("Various monsters eat and kill animals and creatures, destroying people's family and home. Poeple live ");
+		try {
+			Thread.sleep(500);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		System.out.println("desperately, wishing one day a hero can save their lives and bring them the peace.");
+		try {
+			Thread.sleep(500);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		System.out.println();
 		System.out.println("You are the chosen one. You were born for fighting them to death. That's your destiny, and also the path you chose for yourself." );
+		try {
+			Thread.sleep(500);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		System.out.println("Recently you just find that all monsters have a weird relationships with their leader: Fire Dragon. An elder");
+		try {
+			Thread.sleep(500);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		System.out.println("told you, if you can kill you that beast, all other monsters will die.");
+		try {
+			Thread.sleep(500);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		System.out.println("You have decided, to bring the Earth peace. Now, the chosen one, it's time to fight!");
+		try {
+			Thread.sleep(500);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		System.out.println("You have 10 days to kill it!");
+		try {
+			Thread.sleep(500);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		System.out.println("Player enter your name:");
 		String name = sc.nextLine();
 		System.out.println(name + ", do you want to be a warrior or a wizard?");
@@ -350,11 +410,24 @@ public class Game {
 		Monster boss = new Monster("Fire Dragon", 1500, 200, 50, 0);
 		boolean nd = battle(boss, newPlayer); 
 		if(boss.hp <= 0) {
-			System.out.println("We are so proud of you! You are the only one defeating the most dangerous monster all over the world! "
-					+ "Because of you, we humanbeing finally can live in a safe and peacful world! You bring us the peace!");
+			System.out.println("We are so proud of you! You are the only one defeating the most dangerous monster all over the world! ");
+			try {
+				Thread.sleep(500);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			System.out.println("Because of you, we humanbeing finally can live in a safe and peacful world! You bring us the peace!");
 		} else {
-			System.out.println("We are sorry for you, you get the fatal attack from the Fire Dragon. "
-					+ "You are the only hope for us people, please choose to be reborn and save us again! ");
+			System.out.println("We are sorry for you, you get the fatal attack from the Fire Dragon. ");
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			System.out.println("You are the only hope for us people, please choose to be reborn and save us again! ");
+			
 		}
 		
 
