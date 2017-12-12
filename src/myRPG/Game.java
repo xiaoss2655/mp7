@@ -42,7 +42,7 @@ public class Game {
 				c = sc2.nextInt();
 			}
 			if (c == 3) {
-				System.out.println("success!");
+				System.out.println("You escape from the battle!");
 				return true; 
 			}
 			if (c == 1) {
